@@ -1,3 +1,7 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/ego3mkphgb2x5x9d?svg=true)](https://ci.appveyor.com/project/Turovae/ra16-composition-decomposition)
+
+---
+
 Декомпозиция
 ===
 
