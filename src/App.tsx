@@ -1,3 +1,4 @@
+import { v4 as uuidv4 } from 'uuid';
 import './App.css';
 import Banner from './components/Banner';
 import News from './components/News/News';
@@ -8,16 +9,19 @@ import NewsItem from './components/News/NewsItem';
 
 const news: NewsItemProps[] = [
   {
+    id: uuidv4(),
     name: 'news item 1',
     icon: 'news icon 1',
     href: '#',
   },
   {
+    id: uuidv4(),
     name: 'news item 2',
     icon: 'news item 2',
     href: '#',
   },
   {
+    id: uuidv4(),
     name: 'news item 3',
     icon: 'news item 3',
     href: '#',
@@ -31,12 +35,7 @@ function App() {
       <div className="main block">
         <h1>Main block</h1>
         <News>
-          {/* {news.map((newsItem, index) => (
-            <div key={index} className='news_item block'>
-              <span className="news_icon">{newsItem.icon}</span> <a href={newsItem.href} className='news_title'>{newsItem.name}</a>
-            </div>
-          ))} */}
-          {news.map((newsItem) => <NewsItem {...newsItem} />)}
+          {news.map((newsItem) => <NewsItem {...newsItem} key={newsItem.id} />)}
         </News>
         <Search />
         <Banner />
