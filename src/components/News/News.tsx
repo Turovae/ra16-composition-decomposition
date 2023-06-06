@@ -5,14 +5,13 @@ import { ReactElement } from "react";
  * @returns News block
  */
 
-function News(props: {
-  children: ReactElement[]
+function News({ children }: {
+  children: ReactElement[] | ReactElement
 }) {
-  console.log(props);
   return (
     <div className="news block">
       <h2>News block</h2>
-      {props.children}
+      {children}
     </div>
   )
 }

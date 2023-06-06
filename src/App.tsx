@@ -7,6 +7,7 @@ import Services from './components/Services/Services';
 import NewsItemProps from './interfaces/NewsItemProps';
 import NewsItem from './components/News/NewsItem';
 import Service from './components/Services/Service';
+import Menu from './components/Menu/Menu';
 
 const news: NewsItemProps[] = [
   {
@@ -36,7 +37,10 @@ function App() {
       <div className="main block">
         <h1>Main block</h1>
         <News>
-          {news.map((newsItem) => <NewsItem {...newsItem} key={newsItem.id} />)}
+          {[
+            <Menu key={uuidv4()} items={['Opt1', 'Opt2', 'Opt3']} />,
+            ...news.map((newsItem) => <NewsItem {...newsItem} key={newsItem.id} />)
+          ]}
         </News>
         <Search />
         <Banner />
