@@ -1,0 +1,8 @@
+.services_content {
+  /* display: flex; */
+  column-count: 3;
+}
+
+.service {
+  break-inside: avoid;
+}

@@ -6,6 +6,7 @@ import Search from './components/Search/Search';
 import Services from './components/Services/Services';
 import NewsItemProps from './interfaces/NewsItemProps';
 import NewsItem from './components/News/NewsItem';
+import Service from './components/Services/Service';
 
 const news: NewsItemProps[] = [
   {
@@ -39,7 +40,21 @@ function App() {
         </News>
         <Search />
         <Banner />
-        <Services />
+        <Services>
+          <Service title='Service 1'>
+            <div>Service content 1</div>
+          </Service>
+          <Service title='Service 2'>
+            <ul>
+              <li>item 1</li>
+              <li>item 2</li>
+              <li>item 3</li>
+            </ul>
+          </Service>
+          <Service title='Service 3'>
+            <div>Content service 3</div>
+          </Service>
+        </Services>
       </div>
     </>
   )
