@@ -10,20 +10,20 @@ import NewsItem from './components/News/NewsItem';
 const news: NewsItemProps[] = [
   {
     id: uuidv4(),
-    name: 'news item 1',
-    icon: 'news icon 1',
+    name: 'news name 1',
+    icon: 'icon 1',
     href: '#',
   },
   {
     id: uuidv4(),
-    name: 'news item 2',
-    icon: 'news item 2',
+    name: 'news name 2',
+    icon: 'icon 2',
     href: '#',
   },
   {
     id: uuidv4(),
-    name: 'news item 3',
-    icon: 'news item 3',
+    name: 'news name 3',
+    icon: 'icon 3',
     href: '#',
   }
 ];
